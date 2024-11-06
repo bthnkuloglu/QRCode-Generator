@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  color: black;
+  text-align: center;
+}
+
+/* Dark Mode Settings */
+.app.dark-mode {
+  background-color: #333;
+  color: white;
+}
+
+/* Dark Mode Toggle */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 20px 0 20px 0;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 30px;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgb(45, 64, 233);
+  border-radius: 30px;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #516375;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+
+/* QR INPUT CSS */
+.qrArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.text {
+  width: 500px;
+  height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.text::placeholder {
+  font-size: 20px;
+  color: #999;
+}
+
+.submit {
+  width: 520px;
+  height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  background-color: green;
+  color: white;
+}
+
+.submit:hover {
+  background-color: #275529;
+}
+
+/* Color Picker */
+.color-picker {
+  margin:-10px 0 3px 0;
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  gap:15px;
+}
+
+.picker {
+  width: 30px;
+  height: 30px;
+}
+
+.color-picker label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  gap: 5px;
+}
+
+/* QR Code IMG */
+.qr-code {
+  padding: 20px;
+  background-color: rgb(225, 218, 218);
+  border: none;
+  border-radius: 20px;
+}
+
+/* Download Button */
+.download-button {
+  width: 520px;
+  height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  background-color: blue;
+  color: white;
+}
+
+.download-button:hover {
+  background-color: #003366;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For small screens like mobile phones (max-width: 600px) */
+@media (max-width: 600px) {
+  .text {
+    font-size: 18px;
+    width: 90%;
+  }
+
+  .submit {
+    font-size: 20px;
+    width: 90%;
+  }
+
+  .color-picker {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .qr-code {
+    width:55%;
+    padding: 10px;
+  }
+  .img{
+    width: 200px;
+    height: 200px;
+  }
+
+  .download-button {
+    font-size: 20px;
+    width: 90%;
+  }
+
+  .switch {
+    width: 50px;
+    height: 30px;
+  }
+
+  .slider:before {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+/* For larger screens (Tablet, Desktop) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .text {
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .submit {
+    font-size: 22px;
+    width: 80%;
+  }
+
+  .color-picker {
+    width: 80%;
+    gap: 15px;
+  }
+
+  .qr-code {
+    width: 30%;
+    padding: 10px;
+  }
+  .img{
+    width: 200px;
+    height: 200px;
+  }
+
+  .download-button {
+    font-size: 22px;
+    width: 80%;
+  }
+}
