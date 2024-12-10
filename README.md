@@ -33,11 +33,11 @@ This application is a QR Code Generator built with React. Users can instantly cu
 # 🚀 Installation and Usage 
 1.Clone this repository to your local machine: 
 ```bash
-git clone https://github.com/username/dynamic-qr-code-generator.git
+git clone https://github.com/bthnkuloglu/qr-code-generator.git
 ```
 2.Navigate to the project directory:
 ```bash
-cd dynamic-qr-code-generator
+cd qr-code-generator
 ```
 3.Install dependencies:
 ```bash
