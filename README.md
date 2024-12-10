@@ -49,5 +49,5 @@ npm start
 ```
 
 # LIVE DEMO 
-[click here to explore the live demo](http://https://qrcodegen-bk.netlify.app/ "click here to explore the live demo")
+[click here to explore the live demo](https://qrcodegen-bk.netlify.app/ "click here to explore the live demo")
     
